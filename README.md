@@ -35,7 +35,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Struggled with creating a proper settings page. Was able to create page, but could not get data from settings to transfer to main page. Decided to opt for only one page and include a color changing feature.Look forward to working with this more.
+Struggled with creating a proper settings page. Was able to create page, but could not get data from settings to transfer to main page. Decided to opt for only one page and include a color changing feature. Look forward to working with this more.
 
 ## License
 
