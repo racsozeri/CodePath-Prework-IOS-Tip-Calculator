@@ -49,14 +49,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icm-Jq-An9">
-                                <rect key="frame" x="20" y="425" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-1o-ck8">
-                                <rect key="frame" x="300" y="425" width="56" height="21"/>
+                                <rect key="frame" x="20" y="425" width="37" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -69,14 +62,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R81-sb-Q28">
+                                <rect key="frame" x="20" y="582" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="White"/>
+                                    <segment title="Black"/>
+                                    <segment title="Red "/>
+                                </segments>
+                                <connections>
+                                    <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="sci-Mb-v6i"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-1o-ck8">
+                                <rect key="frame" x="298" y="442" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="billAmount" destination="Dey-Kh-rWd" id="BSm-9N-pmu"/>
                         <outlet property="billAmountTextField" destination="qLK-dp-tIP" id="fRG-km-jr0"/>
+                        <outlet property="colorChanger" destination="R81-sb-Q28" id="1F2-Pa-GZ4"/>
+                        <outlet property="tip" destination="dQn-Dh-Cdx" id="LFs-t5-K9v"/>
                         <outlet property="tipAmountLabel" destination="atJ-8C-E4T" id="kfr-6e-ZLe"/>
                         <outlet property="tipControl" destination="Ub4-HA-FgJ" id="M8U-Pa-iph"/>
+                        <outlet property="total" destination="icm-Jq-An9" id="pGa-DP-fsY"/>
                         <outlet property="totalLabel" destination="e8G-1o-ck8" id="IOY-jW-X49"/>
                     </connections>
                 </viewController>
